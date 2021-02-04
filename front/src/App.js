@@ -58,7 +58,7 @@ function Login() {
     </div>
   )
   function login() {
-    axios.post("http://localhost:5000/login", {
+    axios.post("http://172.24.98.145:5000/login", {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json"
@@ -118,7 +118,7 @@ function Register() {
     </div>
   )
   function register() {
-    axios.post("http://localhost:5000/register", {
+    axios.post("http://172.24.98.145:5000/register", {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json"
@@ -153,7 +153,7 @@ function EventList() {
   useEffect(() => {
     console.log(params.has("user_id"))
     if (params.has("user_id") && params.get("user_id") !== undefined && params.get("user_id") !== "") {
-      axios.get(`http://localhost:5000/users/${params.get("user_id")}/events`)
+      axios.get(`http://172.24.98.145:5000/users/${params.get("user_id")}/events`)
         .then(res => setEvents(res.data))
     }
     else {
@@ -161,7 +161,7 @@ function EventList() {
     }
   })
   function remove(event_id) {
-    axios.delete(`http://localhost:5000/users/${params.get("user_id")}/events/${event_id}`)
+    axios.delete(`http://172.24.98.145:5000/users/${params.get("user_id")}/events/${event_id}`)
       .then(() => window.location.reload())
   }
   return (<div className="resultList">
