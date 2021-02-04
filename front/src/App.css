@@ -1,0 +1,66 @@
+.App{
+  background-color: #beffcc;
+  min-height: 100vh;
+}
+.form-group{
+  text-align: left;
+  width: 35%;
+}
+.Center-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  height: 100vh;
+  padding:5px;
+
+}
+
+.vertical-form > *{
+  margin: 5px;
+}
+.vertical-form{
+  display: flex;
+  flex-direction: column;
+}
+.primary{
+  background-color: #004852;
+}
+button.primary:hover{
+  background-color: #015c68;
+}
+.secondary{
+  background-color: #c26222;
+}
+.secondary:hover{
+  background-color: #b4581a;
+}
+.centered{
+  text-align: center;
+}
+.resultList{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.resultList > *{
+  margin: 20px;
+}
+.result{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.result > *{
+  margin: 10px
+}
+.controls{
+  display: grid;
+  grid-template-columns: 12fr 6fr 2fr 6fr;
+}
+.controls.small{
+  grid-template-columns: 24fr 6fr 2fr 6fr;
+}
